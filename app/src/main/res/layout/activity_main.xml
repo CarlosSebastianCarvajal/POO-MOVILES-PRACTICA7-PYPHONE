@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etxtTelefono"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtCodigo"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Codigo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtTelefono" />
+
+    <EditText
+        android:id="@+id/etxtIdCliente"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Id Cliente (Cedula u otro)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtCodigo" />
+
+    <EditText
+        android:id="@+id/etxtReferencia"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Referencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtIdCliente" />
+
+    <EditText
+        android:id="@+id/etxtMonto"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Monto a Cobrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtReferencia" />
+
+    <EditText
+        android:id="@+id/etxtTrCliente"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Transaccion Cliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtMonto" />
+
+    <Button
+        android:id="@+id/btnCobrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Enviar a cobrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtTrCliente" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
